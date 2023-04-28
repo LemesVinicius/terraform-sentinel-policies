@@ -18,3 +18,8 @@ policy "require-dns-support-for-vpcs" {
   source = "./require-dns-support-for-vpcs.sentinel"
   enforcement_level = "advisory"
 }
+
+policy "enforce-vpc-cidr-block-prefix" {
+  source = "./enforce-vpc-cidr-block-prefix.sentinel"
+  enforcement_level = "hard-mandatory"
+}
